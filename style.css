@@ -1,0 +1,18 @@
+/* styles.css */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Create 3 columns with equal width */
+    grid-template-rows: repeat(3, 100px); /* Create 3 rows with a fixed height of 100px */
+    gap: 10px; /* Add a 10px gap between grid items */
+}
+
+.item {
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+}
+@media (max-width: 1000px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
